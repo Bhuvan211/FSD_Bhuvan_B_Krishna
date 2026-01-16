@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <title>Travel Reg Form</title>
+        <style>
+            fieldset{
+                border-radius: 10px;
+                margin-right: 400px;
+                margin-left: 400px;
+                /* background-color: lightgray; */
+                background: linear-gradient(orange, lightblue,green);
+                box-shadow:15px 1px 10px black;
+                margin-top: 140px;
+            }
+            body{
+                background: url(./sun-sets-behind-mountain-ranges-600nw-2479236003.webp);
+            }
+            input{
+                background-color:bisque;
+                border: none;
+            }
+            legend{
+                text-align: center;
+                padding: 10px;
+            }
+            label{
+                margin-left: 300px;
+                color: blue;
+            }
+            button{
+                margin-left: 400px;
+                background-color: green;
+                border: none;
+                border-radius: 5px;
+                padding: 5px;
+            }
+            button:hover{
+                background-color: greenyellow;
+            }
+            #i1{
+                margin-left: 35px;
+            }
+            #i2{
+                margin-left: 55px;
+            }
+            #i3{
+                margin-left: 25px;
+            }
+            #i4{
+                margin-left: 25px;
+            }
+            #i5{
+                margin-left: 45px;
+            }
+            #i6{
+                margin-left: 40px;
+            }
+            #i7{
+                margin-left: 35px;
+            }
+            #i8{
+                margin-left: 15px;
+            }
+            select:hover{
+                background-color: orangered;
+            }
+            select{
+                margin-left:300px ;
+                margin-bottom:15px ;
+                width: 250px;
+                height: 20px;
+                background-color: orange;
+            }
+            p{
+                margin-left: 350px;
+                width: 130px;
+            }
+            p:hover{
+                background-color: lightgreen;
+            }
+            img{
+                width: 50px;
+                margin-left: 400px;
+                margin-bottom: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+        <fieldset> <legend><b>Travel Reg Form</b></legend>
+            <img src="./sun-sets-behind-mountain-ranges-600nw-2479236003.webp" alt=""><br>
+            <select>
+                <option>--Select--</option>
+                <option>Bus</option>
+                <option>Train</option>
+                <option>Flight</option>
+            </select><br>
+            <label>Form:</label>
+            <input id="i1" type="text" placeholder="Enter ur from city here "required><br><br>
+            <label>To:</label>
+            <input id="i2" type="text" placeholder="Enter ur to city here" required><br><br>
+            <label>Date of Travelling:</label>
+            <input type="date" required><br><br>
+            <label>Fname:</label>
+            <input id="i3" type ="text" required><br><br>
+            <label>Lname:</label>
+            <input id="i4" type="text"required><br><br>
+            <label>Gender:</label>
+            Male<input type="radio" name="Gender" value="Male" required>
+            Female<input type="radio" name="Gender" value="Female" required>
+            Others<input type="radio" name="Gender" value="Others" required><br><br>
+            <label>Age:</label>
+            <input id="i5" type="number" required><br><br>
+            <label>Phno:</label>
+            <input id="i6" type="number" required><br><br>
+            <label>Email:</label>
+            <input id="i7" type="email" required><br><br>
+            <label>password:</label>
+            <input id="i8" type="password" required><br><br>
+            <button onclick="">Reg in</button>
+            <p>Forgotten password</p>
+        </fieldset>
+        </form>
+    </body>
+</html>
