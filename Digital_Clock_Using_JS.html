@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Digital Clock</title>
+        <style>
+            h1{
+                text-align: center;
+            }
+            .i1{
+                background-color: black;
+                color: aliceblue;
+                text-align: center;
+                margin-left: 700px;
+                margin-right: 700px;
+                box-shadow: 2px 2px 5px 5px  lawngreen;
+                border-radius: 25px;
+                height: 50px;
+                font-size: 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Digital Clock</h1>
+        <div class="i1">
+            <h2 id="clock"></h2>
+        </div>
+        <script>
+            function Time()
+            {
+                let now =new Date();
+                let hours = now.getHours();
+                let min = now.getMinutes();
+                let sec = now.getSeconds();
+                if(hours < 10)
+                {
+                    hours = "0"+ hours;
+                }
+                if(min < 10)
+                {
+                    min = "0"+ min;
+                }
+                if(sec < 10)
+                {
+                    sec = "0"+ sec;
+                }
+                let digital = hours+":"+min+":"+sec;
+                document.getElementById('clock').textContent = digital;
+            }
+            Time()
+            setInterval(Time,1000)
+        </script>
+    </body>
+</html>

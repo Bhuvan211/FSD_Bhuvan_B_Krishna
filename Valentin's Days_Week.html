@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Valentine's Week</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            text-align: center;
+            padding: 40px;
+        }
+
+        marquee {
+            font-size: 22px;
+            color: white;
+            font-weight: bold;
+            background: #e91e63;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            width: 360px;
+            margin: 40px auto;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            color: #e91e63;
+        }
+
+        input, button {
+            padding: 10px;
+            margin: 10px;
+            width: 85%;
+            font-size: 16px;
+        }
+
+        button {
+            background: #e91e63;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #c2185b;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Marquee Banner -->
+<marquee behavior="scroll" direction="left">
+    💖 Welcome to Valentine’s Week Finder 💖 Check Your Special Day 💌
+</marquee>
+
+<div class="card">
+    <h1>Valentine's Week Finder</h1>
+
+    <input type="number" id="day" placeholder="Enter Feb date (7–14)">
+    <button onclick="findDay()">Check Day</button>
+
+    <div id="result"></div>
+</div>
+
+<script>
+function findDay() {
+    let d = parseInt(document.getElementById("day").value);
+    let output = "";
+
+    switch(d) {
+        case 7:
+            output = "🌹 Rose Day";
+            break;
+
+        case 8:
+            output = "💍 Propose Day";
+            break;
+
+        case 9:
+            output = "🍫 Chocolate Day";
+            break;
+
+        case 10:
+            output = "🧸 Teddy Day";
+            break;
+
+        case 11:
+            output = "🤝 Promise Day";
+            break;
+
+        case 12:
+            output = "🤗 Hug Day";
+            break;
+
+        case 13:
+            output = "💋 Kiss Day";
+            break;
+
+        case 14:
+            output = "❤️ Valentine’s Day";
+            break;
+
+        default:
+            output = "❌ Enter a valid date between 7 and 14";
+    }
+
+    document.getElementById("result").innerHTML = output;
+}
+</script>
+
+</body>
+</html>

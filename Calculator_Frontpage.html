@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <style>
+            fieldset{
+                margin-left: 500px;
+                margin-right: 645px;
+                background-color: darkgray;
+            }
+            .container {
+                display: grid;
+                gap: 3px;
+                grid-template-columns: 25% 25% 25% 25%;
+                padding: 10px;
+            }
+            .container div {
+                background-color: #f1f1f1;
+                border: 1px solid black;
+                padding: 10px;
+                font-size: 30px;
+                text-align: center;
+            }
+            input{
+                width: 500px;
+                margin-left: 9px;
+                height: 50px;
+            }
+            #C{
+                background-color: red;
+                border-color: gray;
+            }
+            #S{
+                background-color: black;
+                color: white;
+                border-color: gray;
+            }
+            #i1{
+                border-color: gray;
+            }
+        </style>
+    </head>
+    <body>
+        <fieldset>
+            <div id="i5">
+                <input type="text" placeholder="0">
+            </div>
+            <div class="container">
+                <div id="i1">7</div>
+                <div id="i1">8</div>
+                <div id="i1">9</div>
+                <div id="S">+</div>
+                <div id="i1">4</div>
+                <div id="i1">5</div>
+                <div id="i1">6</div>
+                <div id="S">-</div>
+                <div id="i1">1</div>
+                <div id="i1">2</div>
+                <div id="i1">3</div>
+                <div id="S">X</div>
+                <div id="C">C</div>
+                <div id="i1">0</div>
+                <div id="S">=</div>
+                <div id="S">/</div>
+            </div>
+        </fieldset>
+    </body>
+</html>

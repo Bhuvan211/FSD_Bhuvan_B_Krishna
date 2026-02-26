@@ -1,0 +1,165 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.navbar{
+    background-color: whitesmoke;
+}
+.navbar,ul{
+    display: flex;
+    gap: 25px;
+    list-style-type: none;
+}
+ul{
+    margin-left: 600px;
+}
+li{
+    margin-top: 10px;
+    font-size: 20px;
+}
+.icon{
+    margin-left: 200px;
+    background-color: rgb(255, 204, 0);
+    padding: 5px;
+    border-radius: 20px;
+}
+.text{
+    text-align: center;
+    font-family: sans-serif;
+    margin-top: -1;
+}
+.i1{
+    margin-left: 650px;
+    width: 380px;
+    height: 40px;
+    border-radius: 5px;
+    border: 0.5 solid grey;
+}
+.button{
+    margin-left: 650px;
+    width: 380px;
+    height: 40px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 0.5 solid grey;
+    background-color: rgb(255, 204, 0);
+}
+.form{
+    background: url("./map.jpg");
+    background-position: center;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+    height: 300px;
+}
+.Services{
+    margin-left: 150px;
+}
+img{
+    height: 300px;
+    width: 300px;
+    margin: 40px;
+    border-radius: 10px;
+}
+.images{
+    margin-left: 100px;
+}
+.Ride{
+    background-color: rgb(182, 182, 182);
+    display: flex;
+    height: 500px;
+}
+.para{
+    margin-left: 150px;
+    margin-top: 20px;
+    font-size: xx-large;
+}
+.im1{
+    height: 300px;
+    width: 300px;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.about-btn{
+    color: white;
+    height: 40px;
+    width: 200px;
+    background-color: black;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+.Ride1{
+    display: flex;
+}
+span{
+    color: rgb(25, 25, 76);
+}
+.Download{
+    background-color: black;
+}
+#Download{
+    color: white;
+    text-align: center;
+}
+.rap-im{
+    margin-left: 450px;
+}
+.download-section {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.download-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.download-title::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background: #ffcc00;
+    display: block;
+    margin: 10px auto 0;
+}
+
+.apps-container {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.app-box {
+    text-align: center;
+}
+
+.app-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.yellow {
+    background: #ffcc00;
+    color: black;
+}
+
+.white {
+    background: white;
+    color: black;
+}
+
+.app-text {
+    font-size: 18px;
+}

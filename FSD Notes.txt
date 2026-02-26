@@ -1,0 +1,19 @@
+Full Stack Dev
+---------------
+Front end & Back end:
+FE: HTML,CSS,JS,NJS,RJS,EJS(Express JS),AJS(Angular JS),VJS
+    PHP(hypertext pre-processor),XML,XHTML,WEBP,TABL,BOOSTRUP...
+BE: 2)types: BL(Backend language)/PL(programing language):
+             1)BL/Pl: it has 420 languages
+             2)DB: MDB ,Msql ,Oracle ,no_sql ,posql .....
+
+HTML+CSS+JS+RJS+NJS+EJS = FE 
+PYTHON/JAVA = BL (OPTIONAL CAN CHOSE ONE)
+MYSQL = DB
+PYTHON FSD / JAVA FSD
+
+HTML LISTS:<li></li>
+OL : <ol></ol>
+UOL : <ul></ul>
+
+

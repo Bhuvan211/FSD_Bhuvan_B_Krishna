@@ -1,0 +1,198 @@
+<html>
+    <head>
+        <Title>zomato</Title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <style>
+            body{
+                margin:0;
+                padding:0;
+                font-family: 'Poppins', sans-serif;
+                color: white;
+                
+            }
+            video{
+               width:100%; 
+               position: absolute;
+               z-index: -1;
+               top: 0;
+               bottom: 0;
+               right: 0;
+                z-index: 1;
+            
+            }
+
+            .heading{
+                position: relative;
+                color: white;
+                text-align: center;
+                margin-top: 150px;
+                z-index: 3;
+
+            }
+            .heading h1{
+                   font-size: 70px;
+                   font-style: italic;
+                   letter-spacing: -1px
+            }
+            .heading h2{
+                font-size: 50px;
+                margin-bottom: 20px;
+                font-size: 56px;
+                font-weight: 700;
+                line-height: 1.15;
+                letter-spacing: -0.5px;
+                margin-top: 10px;
+            }
+            .heading p{
+                font-family: Arial, sans-serif;
+                font-size: 22px;
+                font-weight: 400;
+                color: #f1f1f1;
+                margin-top: 15px;
+                
+            }
+            .buttons{
+               cursor: pointer;
+               display: flex;  
+            }
+            .icon1{
+                width: 200px;
+                
+                margin-left: 450px;
+            }
+            .icon2{
+                width: 200px;
+                height: 70px;
+                margin-left: 30px;
+            }
+           .hero {
+  position: relative;
+  height: 100vh;
+  background: url("./background.avif") no-repeat center;
+  background-size: cover;
+  text-align: center;
+  padding-top: 120px;
+  overflow: hidden;
+  background-size: 1200px auto;
+   z-index: 0; 
+}
+
+.hero h1 {
+  color: #f24c5c;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  color: #555;
+  font-size: 16px;
+  width: 480px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.food {
+  position: absolute;
+  width: 160px;
+}
+
+.burger { left: 120px; top: 320px; }
+.dumplings { right: 160px; top: 120px; }
+.pizza { right: 120px; bottom: 180px; }
+
+.tomato {
+  position: absolute;
+  width: 40px;
+}
+
+.t1 { left: 80px; top: 200px; }
+.t2 { right: 260px; top: 260px; }
+
+.stats {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 25px 50px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.stat h2 {
+  margin: 0;
+  color: #333;
+}
+
+.stat span {
+  color: #777;
+  font-size: 14px;
+}
+
+.divider {
+  width: 1px;
+  height: 40px;
+  background: #ddd;
+}
+        </style>
+    </head>
+    <body>
+        <video src="./food.mp4"  autoplay muted loop></video>
+        <div class="heading">
+            <h1>zomato</h1>
+            <h2>India’s #1<br>food delivery app</h2>
+            <p>Experience fast & easy online ordering<br>on the Zomato app</p>
+
+            <div class="buttons">
+            <img class="icon1" src="./googleplay.webp" alt="playstore">
+            <img class="icon2" src="./appstore.png" alt="apple">
+        </div>
+        </div>
+
+        <div class="hero">
+
+  <h1>Better food for<br>more people</h1>
+  <p>
+    For over a decade, we’ve enabled our customers to discover new tastes,
+    delivered right to their doorstep
+  </p>
+
+  
+  <img src="./burger.jpeg" class="food burger">
+  <img src="./dumplings.jpeg" class="food dumplings">
+  <img src="./pizza.jpeg" class="food pizza">
+
+  
+  <img src="./tomato.jpeg" class="tomato t1">
+  <img src="./tomato.jpeg" class="tomato t2">
+
+
+  <div class="stats">
+    <div class="stat">
+      <h2>3,00,000+</h2>
+      <span>restaurants</span>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="stat">
+      <h2>800+</h2>
+      <span>cities</span>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="stat">
+      <h2>3 billion+</h2>
+      <span>orders delivered</span>
+    </div>
+  </div>
+
+</div>
+
+
+    </body>
+</html>

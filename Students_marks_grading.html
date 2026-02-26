@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grade System</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: url("https://images.unsplash.com/photo-1631631480669-535cc43f2327?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmFja2dyb3VuZCUyMGltYWdlfGVufDB8fDB8fHww");
+            background-size: cover;
+            background-position: center;
+        }
+        .box {
+            width: 350px;
+            margin: auto;
+            margin-top: 200px;
+            padding: 20px;
+            border: 2px solid black;
+            text-align: center;
+            border-radius: 15px;
+            background-color: rgba(128, 128, 128, 0.655);
+        }
+        input {
+            width: 90%;
+            padding: 6px;
+            margin: 6px 0;
+        }
+        button {
+            padding: 8px 15px;
+            margin-top: 10px;
+        }
+        .result {
+            margin-top: 15px;
+            border-top: 1px solid #000;
+            padding-top: 10px;
+        }
+        h2{
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+    <h2><u>Student Result</u></h2>
+
+    <input type="text" id="name" placeholder="Enter Name">
+    <input type="text" id="reg" placeholder="Enter Register Number">
+    <input type="text" id="course" placeholder="Enter Course">
+    <input type="number" id="marks" placeholder="Enter Marks">
+
+    <button onclick="result()">Submit</button>
+
+    <div class="result" id="output"></div>
+</div>
+
+<script>
+function result() {
+
+    var name = document.getElementById("name").value;
+    var reg = document.getElementById("reg").value;
+    var course = document.getElementById("course").value;
+    var m = parseInt(document.getElementById("marks").value);
+
+    var grade, status;
+
+    if (m >= 95) grade = "O";
+    else if (m >= 90) grade = "A+";
+    else if (m >= 85) grade = "A";
+    else if (m >= 80) grade = "B+";
+    else if (m >= 75) grade = "B";
+    else if (m >= 65) grade = "C";
+    else if (m >= 50) grade = "D";
+    else grade = "F";
+
+    status = (m >= 50) ? "PASS" : "FAIL";
+    document.getElementById('output').style.color = "white"
+
+    document.getElementById("output").innerHTML =
+        "<h3>Result</h3>" +
+        "Name: " + name + "<br>" +
+        "Register No: " + reg + "<br>" +
+        "Course: " + course + "<br>" +
+        "Marks: " + m + "<br>" +
+        "Grade: " + grade + "<br>" +
+        "Status: " + status;
+}
+</script>
+
+</body>
+</html>

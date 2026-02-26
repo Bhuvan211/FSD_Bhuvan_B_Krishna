@@ -1,0 +1,51 @@
+﻿<html>
+<head>
+    <title>Netflix - Watch TV Shows Online, Watch Movies Online</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Watch TV shows and movies online. Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more.">
+    <meta name="keywords" content="Netflix, Watch TV Shows, Watch Movies, Online Streaming, Unlimited Movies, TV Shows">
+    <meta name="author" content="Netflix, Inc.">
+    <link rel="icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico">
+
+</head>
+<body>
+    <header>
+        <h1>Netflix</h1>
+        <nav>
+            <ul>
+                <li><a href="#tv-shows">TV Shows</a></li>
+                <li><a href="#movies">Movies</a></li>
+                <li><a href="#new-releases">New Releases</a></li>
+                <li><a href="#my-list">My List</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <h2>Watch TV Shows and Movies Online</h2>
+            <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more.</p>
+            <button>Join Now</button>
+        </section>
+        <section id="tv-shows">
+            <h2>Popular TV Shows</h2>
+            <!-- TV shows content goes here -->
+        </section>
+        <section id="movies">
+            <h2>Popular Movies</h2>
+            <!-- Movies content goes here -->
+        </section>
+        <section id="new-releases">
+            <h2>New Releases</h2>
+            <!-- New releases content goes here -->
+        </section>
+        <section id="my-list">
+            <h2>My List</h2>
+            <!-- User's saved content goes here -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Netflix, Inc. All rights reserved.</p>
+    </footer>
+</body>
+</html>
